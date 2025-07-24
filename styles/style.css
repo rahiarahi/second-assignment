@@ -111,6 +111,7 @@ body{
 }
 .card{
   text-align: center;
+  width: 100%;
 }
 .card img{
   max-width: 100%;
@@ -136,6 +137,48 @@ body{
   border: none;
   padding: 19px 80px;
   margin-top: 30px;
+}
+
+/* plants lover style */
+.plants-lover{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  margin: 210px 150px 135px 150px;
+}
+.image-box{
+  position: relative;
+}
+.p-lover-image{
+  max-width: 576px;
+  width: 100%;
+  height: auto;
+}
+.badge{
+  position: absolute;
+  top: -127px;
+  right: -93px;
+  width: 286px;
+  height: 286px;
+}
+.p-lover-content{
+  max-width: 540px;
+}
+.p-lover-title{
+  font-size: 3.125rem;
+  margin-bottom: 30px;
+}
+.p-lover-list{
+  padding-left: 35px;
+  padding-right: 25px;
+}
+.list-item{
+  font-size: 1.375rem;
+  font-weight: 400;
+  color: #000000;
+  opacity: 50%;
+  margin-bottom: 20px;
 }
 
 @media screen and (max-width: 576px) {
@@ -203,7 +246,25 @@ body{
     margin-top: 5px;
   }
   .card-btn{
-    font-size: 1rem;
-    padding: 15px 34px;
+    font-size: 0.875rem;
+    padding: 15px 40px;
+  }
+
+  .plants-lover{
+    flex-direction: column;
+    margin: 20px;
+    margin-top: 30px;
+  }
+  .p-lover-title{
+    font-size: 1.5rem;
+    margin-top: -40px;
+  }
+  .list-item{
+    font-size: 0.875rem;
+    margin-left: -15px;
+    margin-right: -25px;
+  }
+  .badge{
+    display: none;
   }
 }
