@@ -12,6 +12,10 @@
     "wdth" 100;
 }
 
+*{
+  margin: 0;
+  padding: 0;
+}
 body{
   background-color: #f5f8ff;
 }
@@ -24,7 +28,7 @@ body{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 30px 100px 120px 100px;
+  margin: 30px 150px 120px 150px;
 }
 .nav-items{
   display: flex;
@@ -58,7 +62,7 @@ body{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 120px 100px;
+  margin: 120px 150px;
 }
 .banner-content{
   max-width: 570px;
@@ -79,9 +83,64 @@ body{
   color: #E95A08;
 }
 
+/* plants section style */
+.plants{
+  text-align: center;
+  margin: 120px 150px;
+}
+.plants-content{
+  margin-bottom: 50px;
+}
+.plants-title{
+  font-size: 3.125rem;
+  font-weight: bold;
+}
+.plants-subtitle{
+  font-size: 1.375rem;
+  font-weight: 400;
+  color: #000000;
+  opacity: 50%;
+  padding: 16px 126px 0px 126px;
+}
+.cards{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 20px;
+  row-gap: 30px;
+  justify-items: center;
+}
+.card{
+  text-align: center;
+}
+.card img{
+  max-width: 100%;
+  height: auto;
+}
+.card-title{
+  font-size: 1.375rem;
+  font-weight: 500;
+  color: #111111;
+  margin-top: 30px;
+}
+.card-price{
+  font-size: 1.375rem;
+  font-weight: bold;
+  color: #111111;
+  margin-top: 15px;
+}
+.card-btn{
+  font-size: 1rem;
+  font-weight: 500;
+  color: #FFFFFF;
+  background-color: #E95A08;
+  border: none;
+  padding: 19px 80px;
+  margin-top: 30px;
+}
+
 @media screen and (max-width: 576px) {
   .navbar{
-    margin: 10px 10px;
+    margin: 10px 15px;
   }
   .logo img{
     height: 38px;
@@ -96,15 +155,16 @@ body{
   .banner{
     flex-direction: column;
     text-align: center;
-    margin: 0px 0px 0px 10px;
+    margin: 0;
   }
   .banner-content{
     max-width: 100%;
     text-align: start;
-    margin-right: 10px;
+    margin: 28px 20px 65px 16px;
   }
   .banner-title{
     font-size: 1.5rem;
+    margin-bottom: 10px;
   }
   .banner-description{
     font-size: 0.875rem;
@@ -113,5 +173,37 @@ body{
     order: -1;
     width: 100%;
     margin-right: 0px;
+  }
+
+  .plants{
+    margin: 0px;
+  }
+  .plants-content{
+    margin: 25px;
+  }
+  .plants-title{
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  .plants-subtitle{
+    font-size: 0.875rem;
+    padding: 0px;
+  }
+  .cards{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 15px 20px;
+  }
+  .card-title{
+    font-size: 1rem;
+    margin-top: 20px;
+  }
+  .card-price{
+    font-size: 1rem;
+    margin-top: 5px;
+  }
+  .card-btn{
+    font-size: 1rem;
+    padding: 15px 34px;
   }
 }
