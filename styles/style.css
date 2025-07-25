@@ -161,7 +161,17 @@ body{
   right: -93px;
   width: 286px;
   height: 286px;
+  animation: spin 4s linear infinite;
 }
+@keyframes spin {
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg);
+  }
+}
+
 .p-lover-content{
   max-width: 540px;
 }
@@ -283,7 +293,6 @@ body{
   justify-content: space-between;
   align-items: flex-start;
   padding: 50px 160px;
-  /* flex-wrap: wrap; */
 }
 .footer-logo img{
   margin-bottom: 16px;
@@ -413,7 +422,8 @@ body{
     flex-direction: column;
     align-items: center;
     margin-top: 35px;
-    margin: 35px 20px 20px 20px;
+    margin-bottom: 50px;
+    padding: 20px;
   }
   .left-image{
     flex-direction: column;
