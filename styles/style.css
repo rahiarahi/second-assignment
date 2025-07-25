@@ -28,7 +28,7 @@ body{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 30px 150px 120px 150px;
+  margin: 30px 170px 120px 170px;
 }
 .nav-items{
   display: flex;
@@ -62,7 +62,7 @@ body{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 120px 150px;
+  margin: 120px 170px;
 }
 .banner-content{
   max-width: 570px;
@@ -86,7 +86,7 @@ body{
 /* plants section style */
 .plants{
   text-align: center;
-  margin: 120px 150px;
+  margin: 120px 200px;
 }
 .plants-content{
   margin-bottom: 50px;
@@ -243,6 +243,40 @@ body{
   border-radius: 22px;
 }
 
+/* join section style */
+.join{
+  background-image: url(../assets/news-letter-bg.png);
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 200px 305px;
+  color: #FFFFFF;
+}
+.join-title{
+  font-size: 3.125rem;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+.input-box{
+  display: flex;
+  justify-content: center;
+}
+.input-box input{
+  font-size: 1rem;
+  font-weight: 400;
+  border: none;
+  padding: 16px 520px 16px 20px;
+}
+.input-box button{
+  font-size: 1rem;
+  font-weight: 500;
+  color: #FFFFFF;
+  border: none;
+  background-color: #E95A08;
+  padding: 19px 60px;
+
+}
+
 @media screen and (max-width: 576px) {
   .navbar{
     margin: 10px 15px;
@@ -309,7 +343,7 @@ body{
   }
   .card-btn{
     font-size: 0.875rem;
-    padding: 15px 40px;
+    padding: 15px 30px;
   }
 
   .plants-lover{
@@ -343,6 +377,7 @@ body{
     flex-direction: column;
     align-items: center;
     margin-top: 35px;
+    margin: 35px 20px 20px 20px;
   }
   .left-image{
     flex-direction: column;
@@ -363,5 +398,22 @@ body{
   }
   .shop-2{
     font-size: 1rem;
+  }
+
+  
+  .join{
+    padding: 110px 36px 70px 36px;
+  }
+  .join-title{
+    font-size: 1.25rem;
+    margin-bottom: 20px;
+  }
+  .input-box input{
+    font-size: 0.875rem;
+    padding: 12px 80px 12px 12px;
+  }
+  .input-box button{
+    font-size: 0.875rem;
+    padding: 12px 10px;
   }
 }
