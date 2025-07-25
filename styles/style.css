@@ -277,6 +277,42 @@ body{
 
 }
 
+/* footer section style */
+.footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 50px 160px;
+  /* flex-wrap: wrap; */
+}
+.footer-logo img{
+  margin-bottom: 16px;
+}
+.footer-logo p{
+  font-size: 1.375rem;
+  font-weight: 400;
+  color: #000000;
+  opacity: 50%;
+  width: 350px;
+}
+.footer-links{
+  list-style: none;
+}
+.footer-links li{
+  margin-bottom: 30px;
+}
+.footer-links a{
+  text-decoration: none;
+  color: #6B7280;
+  font-size: 1rem;
+  font-weight: 400;
+}
+.footer-social{
+  display: flex;
+  gap: 25px;
+  width: 216px;
+  height: 35px;
+}
 @media screen and (max-width: 576px) {
   .navbar{
     margin: 10px 15px;
@@ -400,13 +436,16 @@ body{
     font-size: 1rem;
   }
 
-  
+
   .join{
     padding: 110px 36px 70px 36px;
   }
   .join-title{
     font-size: 1.25rem;
     margin-bottom: 20px;
+  }
+  .input-box{
+    margin: 20px 30px 60px 30px;
   }
   .input-box input{
     font-size: 0.875rem;
@@ -415,5 +454,21 @@ body{
   .input-box button{
     font-size: 0.875rem;
     padding: 12px 10px;
+  }
+
+
+  .footer{
+    padding: 50px 20px;
+    flex-direction: column;
+  }
+  .footer-logo{
+    margin-bottom: 20px;
+  }
+  .footer-logo p{
+    font-size: 1.2rem;
+    line-height: 1.5;
+  }
+  .footer-logo img{
+    width: 180px;
   }
 }
